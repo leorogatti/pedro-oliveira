@@ -1,49 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Meu Site</title>
-  <style>
-    body {
-      background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
-    }
-    h1 {
-      font-size: 60px;
-      text-align: center;
-      color: white;
-      margin-top: 200px;
-    }
-    img {
-      display: block;
-      margin: 0 auto;
-      width: 400px;
-      height: 400px;
-      animation: spin 4s linear infinite;
-    }
-    @keyframes spin {
-      0% {
-        transform: rotate(0deg);
-      }
-      100% {
-        transform: rotate(360deg);
-      }
-    }
-  </style>
+  <title>Tela de Abertura</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-  <h1>Pedro Oliveira</h1>
-  <img src="pedro oliveira.jfif" alt="Imagem">
-  <script>
-    // Criando o elemento de áudio
-    var audio = new Audio();
-    audio.src = 'yeat.mp3';
+  <div id="tela-abertura" onclick="abrirPagina()">
+    <h1>Clique Aqui</h1>
+  </div>
 
-    // Definindo configurações opcionais
-    audio.controls = true; // Exibe os controles de reprodução
-    audio.autoplay = true; // Inicia a reprodução automaticamente
-    audio.loop = true; // Reproduz em loop contínuo
-
-    // Adicionando o elemento de áudio à página
-    audio.play();
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>

@@ -1,0 +1,57 @@
+body {
+  background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#tela-abertura {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background: black;
+  color: white;
+  cursor: pointer;
+}
+
+#tela-abertura h1 {
+  font-size: 40px;
+}
+
+#conteudo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+}
+
+#conteudo h1 {
+  font-size: 90px;
+  color: #fff;
+}
+
+img{
+  width: 20%;
+}
+
+
+
+
+.rodar-imagem {
+  animation: rodar 5s linear infinite;
+  max-width: 100%;
+  height: auto;
+}
+
+@keyframes rodar {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
