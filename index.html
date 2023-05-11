@@ -30,8 +30,20 @@
   </style>
 </head>
 <body>
-  <audio src="yeat.mp3" autoplay loop></audio>
   <h1>Pedro Oliveira</h1>
   <img src="pedro oliveira.jfif" alt="Imagem">
+  <script>
+    // Criando o elemento de áudio
+    var audio = new Audio();
+    audio.src = 'yeat.mp3';
+
+    // Definindo configurações opcionais
+    audio.controls = true; // Exibe os controles de reprodução
+    audio.autoplay = true; // Inicia a reprodução automaticamente
+    audio.loop = true; // Reproduz em loop contínuo
+
+    // Adicionando o elemento de áudio à página
+    audio.play();
+  </script>
 </body>
 </html>
